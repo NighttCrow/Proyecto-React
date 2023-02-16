@@ -1,4 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import BotonCarrito from './BotonCarrito/BotonCarrito';
 
 const Navbar = () => {
     return (
@@ -36,6 +38,7 @@ const Navbar = () => {
         <input className="form-control me-sm-2" type="search" placeholder="Search" />
         <button className="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
       </form>
+      <BotonCarrito/>
     </div>
   </div>
 </nav>
