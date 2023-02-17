@@ -1,7 +1,9 @@
 import Navbar from './Navbar/Navbar';
 import Footer from './Footer/Footer';
 import ProductListContainer from './ProductListContainer/ProductListContainer';
+import Contador from './Contador/Contador';
 import './App.css';
+
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
       <Navbar />
       <ProductListContainer />
       <Footer />
+      <Contador />
 
     </div>
   );
