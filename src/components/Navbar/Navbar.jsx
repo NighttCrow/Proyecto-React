@@ -1,12 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import { Link } from 'react-router-dom';
 import BotonCarrito from './BotonCarrito/BotonCarrito';
 
 const Navbar = () => {
     return (
         <nav className="  navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">Almacen de Barrio</a>
+  <Link className="navbar-brand" to={"/"}>Almacen de Barrio</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon" />
     </button>
@@ -15,22 +16,24 @@ const Navbar = () => {
         <li className="nav-item">     
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Contacto</a>
+          <Link className="nav-link" to={"../Contacto/Contacto"}>Contacto</Link>
         </li>
         <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos por Categoria</a>
+          <Link className="nav-link dropdown-toggle" data-bs-toggle="dropdown" element="#" role="button" aria-haspopup="true" aria-expanded="false">Productos por Categoria</Link>
           <div className="dropdown-menu">
-            <a className="dropdown-item" href="#">Aceites</a>
-            <a className="dropdown-item" href="#">Arroz Legumbres</a>
-            <a className="dropdown-item" href="#">Bebidas</a>
-            <a className="dropdown-item" href="#">Churrascos Lomitos</a>
-            <a className="dropdown-item" href="#">Leches</a>
-            <a className="dropdown-item" href="#">Margarinas, Mantequillas</a>
-            <a className="dropdown-item" href="#">Pastas</a>
-            <a className="dropdown-item" href="#">Verduras Congeladas</a>
-            <a className="dropdown-item" href="#">Yogurt</a>
+          <ul>
+           <li> <Link className="dropdown-item" to={"/categoria/7"}>Aceites</Link></li>
+           <li>  <Link className="dropdown-item" to={"/categoria/6"}>Arroz Legumbres</Link></li>
+           <li>  <Link className="dropdown-item" to={"/categoria/1"}>Bebidas</Link></li>
+           <li>  <Link className="dropdown-item" to={"/categoria/5"}>Churrascos Lomitos</Link></li>
+           <li>  <Link className="dropdown-item" to={"/categoria/3"}>Leches</Link></li>
+           <li>  <Link className="dropdown-item" to={"/categoria/2"}>Margarinas, Mantequillas</Link></li>
+           <li>  <Link className="dropdown-item" to={"/categoria/9"}>Pastas</Link></li>
+           <li>  <Link className="dropdown-item" to={"/categoria/"}>Verduras Congeladas</Link></li>
+           <li>  <Link className="dropdown-item" to={"/categoria/4"}>Yogurt</Link></li>
+          </ul>
             
-            
+
           </div>
         </li>
       </ul>
