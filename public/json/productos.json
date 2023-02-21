@@ -46,7 +46,7 @@
     },
     {
         "id": 6,
-        "idCategoria": 2,
+        "idCategoria": 1,
         "nombre": "Coca Cola Zero",
         "descripcion": "Bebida Coca Cola sin azucar botella 591 ml",
         "precio": 1200,
@@ -190,7 +190,7 @@
     },
     {
         "id": 22,
-        "idCategoria": 6,
+        "idCategoria": 8,
         "nombre": "Minuto Verde",
         "descripcion": "Arvejas Minuto Verde 500 g",
         "precio": 1650,
@@ -208,7 +208,7 @@
     },
     {
         "id": 24,
-        "idCategoria": 6,
+        "idCategoria": 8,
         "nombre": "Frutos del Maipo",
         "descripcion": "Porotos verdes frances Frutos del Maipo",
         "precio": 2050,
