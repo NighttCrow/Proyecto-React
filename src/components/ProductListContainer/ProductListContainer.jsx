@@ -1,15 +1,32 @@
 import { useState, useEffect } from "react";
+import {useParams} from 'react-router-dom';
 import ProductList from "../ProductList/ProductList";
+
 const ProductListContainer = () => {
     const [ productos, setProductos] = useState([]);
+    const {categoria}= useParams()
+
     useEffect(() => {
-        fetch('./json/productos.json')
+        if (categoria) {
+        fetch('../json/productos.json')
         .then(promise => promise.json())
-        .then(products => {
-            const items = ProductList({products})
-            setProductos(items)
-        })
-    }, [])
+        
+        .then(items => {
+            const products = items.filter(producto => 
+                producto.idCategoria === parseInt(categoria)) 
+            const itemsFiltrados = ProductList({products})
+            setProductos(itemsFiltrados)
+        })}
+        else {
+            fetch('./json/productos.json')
+            .then(promise => promise.json())
+            .then(products => {
+                const items = ProductList({products})
+                setProductos(items)
+        })}
+    }, [categoria])
+
+
 
     return (
         <div className="row cardProducto">
@@ -18,5 +35,6 @@ const ProductListContainer = () => {
         </div>
     );
 }
+
 
 export default ProductListContainer;
