@@ -1,12 +1,14 @@
+
  
-const BotonCarrito = () =>{ 
+ const BotonCarrito = () =>{ 
   
-return( 
+  
+ return( 
 
-<button className='btn btn-dark'> 
-Carrito 
-</button> 
-
-); 
-}
- export default BotonCarrito
+ <button className='btn btn-dark'>  
+ Carrito 
+ </button> 
+ 
+ ); 
+ } 
+ export default BotonCarrito 
