@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
 import { Link } from 'react-router-dom';
 import BotonCarrito from './BotonCarrito/BotonCarrito';
+import Secciones from './Secciones/Secciones';
 
 const Navbar = () => {
     return (
@@ -12,35 +12,13 @@ const Navbar = () => {
       <span className="navbar-toggler-icon" />
     </button>
     <div className="collapse navbar-collapse" id="navbarColor01">
-     
-      <ul className="navbar-nav me-auto">
-        <li className="nav-item">     
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" to={"../Contacto/Contacto"}>Contacto</Link>
-        </li>
-        <li className="nav-item dropdown">
-          <Link className="nav-link dropdown-toggle" data-bs-toggle="dropdown" element="#" role="button" aria-haspopup="true" aria-expanded="false">Productos por Categoria</Link>
-          <div className="dropdown-menu">
-          <ul>
-           <li> <Link className="dropdown-item" to={"/categoria/7"}>Aceites, otros</Link></li>
-           <li>  <Link className="dropdown-item" to={"/categoria/8"}>Arroz, Legumbres</Link></li>
-           <li>  <Link className="dropdown-item" to={"/categoria/1"}>Bebidas</Link></li>
-           <li>  <Link className="dropdown-item" to={"/categoria/5"}>Churrascos, Lomitos</Link></li>
-           <li>  <Link className="dropdown-item" to={"/categoria/3"}>Leches</Link></li>
-           <li>  <Link className="dropdown-item" to={"/categoria/2"}>Margarinas, Mantequillas</Link></li>
-           <li>  <Link className="dropdown-item" to={"/categoria/9"}>Pastas</Link></li>
-           <li>  <Link className="dropdown-item" to={"/categoria/6"}>Verduras Congeladas</Link></li>
-           <li>  <Link className="dropdown-item" to={"/categoria/4"}>Yoghurt</Link></li>
-          </ul>            
-          </div>
-        </li>
-      </ul>
+
+      <Secciones/>
+      <BotonCarrito/>      
       <form className="d-flex">
         <input className="form-control me-sm-2" type="search" placeholder="Search" />
         <button className="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
       </form>
-      <BotonCarrito/>
     </div>
     
   </div>
