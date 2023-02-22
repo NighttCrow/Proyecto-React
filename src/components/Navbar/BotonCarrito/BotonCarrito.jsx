@@ -1,13 +1,18 @@
-
- 
- const BotonCarrito = () =>{ 
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
+import {useCarritoContext} from "../../../Context/CarritoContext"
+ import { Link } from "react-router-dom";
+ const BotonCarrito = () => { 
   
   
  return( 
-
- <button className='btn btn-dark'>  
- Carrito 
+<div>
+ <button className='btn btn-dark'>
+    <Link to={"/carrito"} className="nav/link" >Carrito </Link>
+ 
  </button> 
+ <samp>{useCarritoContext()} </samp>
+ </div>
  
  ); 
  } 
