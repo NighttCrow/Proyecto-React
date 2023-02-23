@@ -1,5 +1,4 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
+import { Link } from "react-router-dom"
 
 const Product = ({prod}) => {
     return (
@@ -11,7 +10,7 @@ const Product = ({prod}) => {
           <p className="card-text">{prod.descripcion}</p>
           <p className="card-text">Precio: {prod.precio}</p>
           <p className="card-text">Stock: {prod.stock}</p>
-          <a href="#" className="btn btn-primary">Comprar</a>
+          <a href="#" className="btn btn-primary"><Link className="nav-link" to={`/producto/${prod.id}`}>Comprar</Link></a>
         </div>
       </div>
       
