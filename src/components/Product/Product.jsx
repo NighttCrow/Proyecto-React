@@ -12,6 +12,7 @@ const Product = ({prod}) => {
             <p className="card-text">Stock: {prod.stock}</p>
             <a href="#" className="btn btn-primary"><Link className="nav-link" to={`/producto/${prod.id}`}>Comprar</Link></a>
           </div>
+
       </div>
       
         
