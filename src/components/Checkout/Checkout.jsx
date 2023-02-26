@@ -16,7 +16,7 @@ const Checkout = () => {
         emptyCart()
         e.target.reset()
         navigate("/")//Envia a la ruta inicial
-        const aux = [...carrito]//Descontar Stock
+        
     }
     return (
         <div className="container" style={{marginTop: "20px"}}>

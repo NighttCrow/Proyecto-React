@@ -1,3 +1,4 @@
+import './ProductListContainer.css'
 import { useState, useEffect } from "react";
 import {useParams} from 'react-router-dom';
 import ProductList from "../ProductList/ProductList";

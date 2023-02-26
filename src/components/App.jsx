@@ -9,31 +9,32 @@ import Contacto from './Contacto/Contacto';
 import Carrito from './Carrito/Carrito'
 import Checkout from './Checkout/Checkout'
 import ProductDetailContainer from './ProductDetailContainer/ProductDetailContainer';
+import Carrusel from "./Carrusel/Carrusel"
 import { CarritoProvider } from '../Context/CarritoContext';
-
 //React Toastify
 import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
-    <div className="App">
-     <CarritoProvider>
-     <BrowserRouter>
-      <Navbar />
-      <Routes>
-      <Route path='/' element={<ProductListContainer/>}/>
-      <Route path='/categoria/:categoria' element={<ProductListContainer/>}/>
-      <Route path='/producto/:id' element={<ProductDetailContainer/>}/>
-      <Route path='/checkout' element={<Checkout/>}/>
-      <Route path='/carrito' element={<Carrito/>}/>
-      <Route path='/contacto' element={<Contacto/>}/>
-      </Routes>   
-      <ToastContainer />     
-      <Contador />     
-      <Footer/>
-     </BrowserRouter>
-     </CarritoProvider>
-    </div>
+    <>
+      <CarritoProvider>
+        <BrowserRouter>
+          <Navbar />
+          <Carrusel />
+            <Routes>
+              <Route path='/' element={<ProductListContainer/>}/>
+              <Route path='/categoria/:categoria' element={<ProductListContainer/>}/>
+              <Route path='/producto/:id' element={<ProductDetailContainer/>}/>
+              <Route path='/checkout' element={<Checkout/>}/>
+              <Route path='/carrito' element={<Carrito/>}/>
+              <Route path='/contacto' element={<Contacto/>}/>
+            </Routes>   
+            <ToastContainer />       
+            <Footer/>
+            
+        </BrowserRouter>
+      </CarritoProvider>
+    </>
   );
 }
 

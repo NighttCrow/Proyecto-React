@@ -1,4 +1,6 @@
+import './Contador.css'
 import { useState } from "react";
+
 const Contador = ({stock, onAdd}) => {
     const [cont, setCont] = useState (1)
     const disCont = () => cont > 1 && setCont(cont-1)
@@ -6,12 +8,13 @@ const Contador = ({stock, onAdd}) => {
     const agregarAlCarrito = () => onAdd(cont)
 
     return (
-        <>
-            <button onClick={() => aumCont()} className="btn btn-dark">+</button>
-            <p>{cont}</p>
-            <button onClick={() => disCont()} className= "btn btn-dark">-</button>
-            <button onClick={() => agregarAlCarrito()} className="btn btn-dark">Agregar</button>
-        </>
+        <div className="container col justify-content-center contenedor">
+            
+                <button onClick={() => disCont()} className= "btn btn-dark btn-sm boton_menos">-</button>
+                <h4>{cont}</h4>
+                <button onClick={() => aumCont()} className="btn btn-dark btn-sm boton_mas">+</button>
+                <button onClick={() => agregarAlCarrito()} className="btn btn-dark btn-sm  boton_agregar">Agregar</button>
+        </div>
 
     );
     
