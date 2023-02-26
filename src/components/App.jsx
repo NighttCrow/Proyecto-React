@@ -1,3 +1,6 @@
+import './App.css';
+import 'react-toastify/dist/ReactToastify.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar/Navbar';
 import Footer from './Footer/Footer';
 import ProductListContainer from './ProductListContainer/ProductListContainer';
@@ -11,13 +14,16 @@ import Carrusel from "./Carrusel/Carrusel"
 import './App.css';
 import 'react-toastify/dist/ReactToastify.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 import { CarritoProvider } from '../Context/CarritoContext';
+
 //React Toastify
 import { ToastContainer } from 'react-toastify';
 
 
 function App() {
   return (
+
     <>
       <CarritoProvider>
         <BrowserRouter>
@@ -30,6 +36,7 @@ function App() {
               <Route path='/producto/:id' element={<ProductDetailContainer/>}/>
               <Route path='/checkout' element={<Checkout/>}/>
               <Route path='/carrito' element={<Carrito/>}/>
+              <Route path='/contacto' element={<Contacto/>}/>
             </Routes>   
             <ToastContainer />       
             <Footer/>
@@ -37,6 +44,8 @@ function App() {
         </BrowserRouter>
       </CarritoProvider>
     </>
+
+   
   );
 }
 

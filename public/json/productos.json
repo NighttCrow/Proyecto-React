@@ -1,4 +1,6 @@
-[
+
+    { "productos":
+    [
     {
         "id": 1,
         "idCategoria": 1,
@@ -367,6 +369,7 @@
         "precio": 950,
         "stock": 60,
         "img": "https://firebasestorage.googleapis.com/v0/b/proyecto-final-react-924bc.appspot.com/o/PastaCanutos%20400.jpg?alt=media&token=17da201c-0d17-4170-b2ed-af30672063b9"
-    }
-   
+    } 
 ]
+}
+   
