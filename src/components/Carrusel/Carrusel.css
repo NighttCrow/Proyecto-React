@@ -1,0 +1,21 @@
+.carrusel {
+    box-shadow: 4px 4px 8px black;
+    border-radius: 10px;
+}
+@media (min-width: 452px ) {
+    .carrusel {
+        margin:28px;
+    }
+}
+@media (min-width: 579px) {
+    .carrusel {
+        margin:50px;
+    }
+}
+@media (min-width: 850px) {
+    .carrusel {
+        margin-left: 100px;
+        width: 80%;
+        margin-left: 130px;
+    }
+}

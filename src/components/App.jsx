@@ -6,6 +6,7 @@ import Contacto from './Contacto/Contacto';
 import Carrito from './Carrito/Carrito'
 import Checkout from './Checkout/Checkout'
 import ProductDetailContainer from './ProductDetailContainer/ProductDetailContainer';
+import Carrusel from "./Carrusel/Carrusel"
 
 import './App.css';
 import 'react-toastify/dist/ReactToastify.css'
@@ -14,13 +15,16 @@ import { CarritoProvider } from '../Context/CarritoContext';
 //React Toastify
 import { ToastContainer } from 'react-toastify';
 
+
 function App() {
   return (
     <>
       <CarritoProvider>
         <BrowserRouter>
           <Navbar />
+          <Carrusel />
             <Routes>
+            
               <Route path='/' element={<ProductListContainer/>}/>
               <Route path='/categoria/:categoria' element={<ProductListContainer/>}/>
               <Route path='/producto/:id' element={<ProductDetailContainer/>}/>
@@ -29,6 +33,7 @@ function App() {
             </Routes>   
             <ToastContainer />       
             <Footer/>
+            
         </BrowserRouter>
       </CarritoProvider>
     </>

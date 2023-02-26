@@ -5,7 +5,7 @@ const Categorias = () => {
     return (
         <div>
          <ul>
-           <li> <Link className="dropdown-item" to={"/categoria/7"}>Aceites, otros</Link></li>
+           <li>  <Link className="dropdown-item" to={"/categoria/7"}>Aceites, otros</Link></li>
            <li>  <Link className="dropdown-item" to={"/categoria/8"}>Arroz, Legumbres</Link></li>
            <li>  <Link className="dropdown-item" to={"/categoria/1"}>Bebidas</Link></li>
            <li>  <Link className="dropdown-item" to={"/categoria/5"}>Churrascos, Lomitos</Link></li>
