@@ -11,6 +11,7 @@ import Checkout from './Checkout/Checkout'
 import ProductDetailContainer from './ProductDetailContainer/ProductDetailContainer';
 import Carrusel from "./Carrusel/Carrusel"
 import { CarritoProvider } from '../Context/CarritoContext';
+import Seccion from './Seccion/Seccion';
 //React Toastify
 import { ToastContainer } from 'react-toastify';
 
@@ -29,7 +30,8 @@ function App() {
               <Route path='/carrito' element={<Carrito/>}/>
               <Route path='/contacto' element={<Contacto/>}/>
             </Routes>   
-            <ToastContainer />       
+            <ToastContainer /> 
+            <Seccion/>      
             <Footer/>
             
         </BrowserRouter>
