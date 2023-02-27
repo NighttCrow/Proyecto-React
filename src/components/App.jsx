@@ -4,7 +4,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar/Navbar';
 import Footer from './Footer/Footer';
 import ProductListContainer from './ProductListContainer/ProductListContainer';
-import Contador from './Contador/Contador';
 import Contacto from './Contacto/Contacto';
 import Carrito from './Carrito/Carrito'
 import Checkout from './Checkout/Checkout'
