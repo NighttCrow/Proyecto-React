@@ -9,31 +9,33 @@
 
 .tam-letra {
     text-align: center;
-    padding: 10px;
+    padding: 30px;
 }
+
 
 @media  (min-width: 700px){
     .img-seccion {
-        height: 20rem;
-        width: 20rem;
+        height: 15rem;
+        width: 15rem;
         padding: 20px;
     }
 
     .tam-letra {
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: center;
     }
 }
 
 @media  (min-width: 1025px){
     .img-seccion {
-        height: 35rem;
-        width:35rem;
+        height: 25rem;
+        width:25rem;
     }
 
     .tam-letra {
-        font-size: 2.5rem;
+        font-size: 2rem;
         text-align: center;
         font-weight: lighter;
+        padding-top: 8rem;
     }
 }

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Categorias = () => {
     return (
         <div>
-         <ul>
+         <ul className='list-unstyled'>
            <li>  <Link className="dropdown-item" to={"/categoria/7"}>Aceites, otros</Link></li>
            <li>  <Link className="dropdown-item" to={"/categoria/8"}>Arroz, Legumbres</Link></li>
            <li>  <Link className="dropdown-item" to={"/categoria/1"}>Bebidas</Link></li>
