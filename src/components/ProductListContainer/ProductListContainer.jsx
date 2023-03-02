@@ -2,6 +2,8 @@ import './ProductListContainer.css'
 import { useState, useEffect } from "react";
 import {useParams} from 'react-router-dom';
 import ProductList from "../ProductList/ProductList";
+import Seccion from '../Seccion/Seccion';
+import Carrusel from '../Carrusel/Carrusel';
 
 const ProductListContainer = () => {
     const [ productos, setProductos] = useState([]);
@@ -30,10 +32,13 @@ const ProductListContainer = () => {
 
 
     return (
-        <div className="row cardProducto">
-            {productos}
-
+            <div className="row cardProducto">
+            <Carrusel/>
+            {productos} 
+            <Seccion/>
         </div>
+
+
     );
 }
 
