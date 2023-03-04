@@ -1,3 +1,6 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@200&display=swap');
+
+
 /*estilos seccion antes del footer */
 .img-seccion {
     height: 10rem;
@@ -23,6 +26,7 @@
     .tam-letra {
         font-size: 1.5rem;
         text-align: center;
+        padding-top: 2rem;
     }
 }
 
@@ -38,4 +42,14 @@
         font-weight: lighter;
         padding-top: 8rem;
     }
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4{
+        font-family: 'Lato', sans-serif;
 }
