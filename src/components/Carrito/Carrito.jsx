@@ -28,12 +28,12 @@ const Carrito = () => {
                                     <p className="card-text">Subtotal : ${new Intl.NumberFormat('de-DE').format(prod.precio * prod.cant) }</p> 
                                     
                                 </div> 
-                                <button className="btn btn-primary boton_compra" onClick = {() => removeItem(prod.id)}>Eliminar Producto</button> 
+                                <button className="btn btn-info boton_compra" onClick = {() => removeItem(prod.id)}>Eliminar Producto</button> 
                             </div> 
                         )} 
                         <div className="divButtons row justify-content-center "> 
                             <h2 className='d-flex justify-content-center resumen_compra'>Resumen de la compra: ${new Intl.NumberFormat('de-DE').format(totalPrice())}</h2> 
-                            <button className="btn btn-danger button" onClick={emptyCart}>Vaciar Carrito</button> 
+                            <button className="btn btn-dark button" onClick={emptyCart}>Vaciar Carrito</button> 
                             <button className="btn btn-dark button"><Link className="nav-link" to={"/"}>Continuar comprando</Link></button> 
                             <button className="btn btn-dark button"><Link className="nav-link" to={"/checkout"}>Finalizar Compra</Link></button> 
                         </div> 
