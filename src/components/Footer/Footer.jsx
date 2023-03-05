@@ -8,7 +8,8 @@ const Footer = () => {
       <p>Somos el almacén de barrio dispuesto a llevar las compras a tu puerta.</p>
     </div>
     <div className="col">
-      <h4>Ubicación</h4> <i class="fa fa-4x fa-map-marker"></i>
+      <h4>Ubicación</h4> 
+      <a className="footerA" href="https://www.google.com/maps/place/Loreto+352,+Recoleta,+Regi%C3%B3n+Metropolitana,+Chile/@-33.4294977,-75.1244515,6z/data=!4m5!3m4!1s0x9662c596f2585bef:0x3c71e5001d16e65f!8m2!3d-33.4295022!4d-70.6420295 " target="_blank" rel="noopener noreferrer" ><i class="fa fa-4x fa-map-marker"  ></i></a>
       <p>Nos ubicamos en la calle Loreto 352 del barrio Bellavista, Santiago de Chile.</p>
     </div>
     <div className="col">
