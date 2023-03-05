@@ -9,7 +9,7 @@ const Carrito = () => {
                 {carrito.length === 0 
                 ? 
                     <> 
-                        <h1>Carrito vacío</h1> 
+                        <h1>Carrito vacio</h1> 
                         <button className = "btn btn-dark">
                             <Link to={"/"} className="nav-link">Ir al inicio</Link>
                         </button>

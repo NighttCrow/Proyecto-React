@@ -4,7 +4,6 @@ import {useParams} from 'react-router-dom';
 import ProductList from "../ProductList/ProductList";
 import Seccion from '../Seccion/Seccion';
 import Carrusel from '../Carrusel/Carrusel';
-import CarruselDeInstagram from '../CarruselDeInstagram/CarruselDeInstagram';
 
 const ProductListContainer = () => {
     const [ productos, setProductos] = useState([]);
@@ -37,8 +36,7 @@ const ProductListContainer = () => {
             <Carrusel/>
             {productos} 
             <Seccion/>
-            <h4 className='text-center'>Mira nuestras ofertas e ideas de recetas en nuestro instagram.</h4>
-            <CarruselDeInstagram/>
+
         </div>
 
 
