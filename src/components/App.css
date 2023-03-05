@@ -53,3 +53,19 @@ p {
 h1, h2, h3, h4{
         font-family: 'Lato', sans-serif;
 }
+
+/*Carrusel instagram*/
+
+.dropdown-menu {
+    --bs-dropdown-link-hover-bg: #0dcaf0;
+}
+
+.containerIg {
+    padding-left:20px;
+    padding-right: 20px;
+}
+
+.logo{
+    height: 80px;
+    width: 80px;
+}
