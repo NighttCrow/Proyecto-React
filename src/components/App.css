@@ -86,3 +86,7 @@ body {
 .card {
     background-color: aliceblue;
 }
+
+.form-control {
+    border: 1px solid black;
+}
