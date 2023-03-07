@@ -1,3 +1,4 @@
+import axios from 'axios';
 import './ProductListContainer.css'
 import { useState, useEffect } from "react";
 import {useParams} from 'react-router-dom';
@@ -12,18 +13,23 @@ const ProductListContainer = () => {
 
     useEffect(() => {
         if (categoria) {
-        fetch('http://localhost:3004/productos')
-        .then(promise => promise.json())
-        
-        .then(items => {
-            const products = items.filter(producto => 
+            
+            //fetch('http://localhost:3004/productos')
+            //.then(promise => promise.json())
+            axios.get('http://localhost:3004/productos')
+            .then(promise => promise.data)
+            .then(items => {
+                const products = items.filter(producto => 
                 producto.idCategoria === parseInt(categoria)) 
-            const itemsFiltrados = ProductList({products})
-            setProductos(itemsFiltrados)
+                const itemsFiltrados = ProductList({products})
+                setProductos(itemsFiltrados)
         })}
         else {
-            fetch('http://localhost:3004/productos')
-            .then(promise => promise.json())
+            
+            //fetch('http://localhost:3004/productos')
+            //.then(promise => promise.json())
+            axios.get('http://localhost:3004/productos')
+            .then (promise => promise.data)
             .then(products => {
                 const items = ProductList({products})
                 setProductos(items)
