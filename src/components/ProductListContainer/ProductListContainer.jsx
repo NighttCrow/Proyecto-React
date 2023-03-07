@@ -12,7 +12,7 @@ const ProductListContainer = () => {
 
     useEffect(() => {
         if (categoria) {
-        fetch('../json/productos.json')
+        fetch('http://localhost:3004/productos')
         .then(promise => promise.json())
         
         .then(items => {
@@ -22,7 +22,7 @@ const ProductListContainer = () => {
             setProductos(itemsFiltrados)
         })}
         else {
-            fetch('./json/productos.json')
+            fetch('http://localhost:3004/productos')
             .then(promise => promise.json())
             .then(products => {
                 const items = ProductList({products})

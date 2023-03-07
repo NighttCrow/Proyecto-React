@@ -6,7 +6,7 @@ const ProductDetailContainer = () => {
     const [producto, setProducto] = useState([]);
     const {id} = useParams()
     useEffect(() => {
-        fetch('../json/productos.json')
+        fetch('http://localhost:3004/productos')
         .then(response => response.json())
         .then(productos => {
             const product = productos.find(item => item.id === parseInt(id))
