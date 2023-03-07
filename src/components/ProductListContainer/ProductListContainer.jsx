@@ -2,6 +2,9 @@ import './ProductListContainer.css'
 import { useState, useEffect } from "react";
 import {useParams} from 'react-router-dom';
 import ProductList from "../ProductList/ProductList";
+import Seccion from '../Seccion/Seccion';
+import Carrusel from '../Carrusel/Carrusel';
+import CarruselInstagram from '../CarruselInstagram/CarruselInstagram';
 
 const ProductListContainer = () => {
     const [ productos, setProductos] = useState([]);
@@ -9,7 +12,7 @@ const ProductListContainer = () => {
 
     useEffect(() => {
         if (categoria) {
-        fetch('../json/productos.json')
+        fetch('http://localhost:3004/productos')
         .then(promise => promise.json())
         
         .then(items => {
@@ -19,7 +22,7 @@ const ProductListContainer = () => {
             setProductos(itemsFiltrados)
         })}
         else {
-            fetch('./json/productos.json')
+            fetch('http://localhost:3004/productos')
             .then(promise => promise.json())
             .then(products => {
                 const items = ProductList({products})
@@ -30,10 +33,15 @@ const ProductListContainer = () => {
 
 
     return (
-        <div className="row cardProducto">
-            {productos}
-
+            <div className="row cardProducto">
+            <Carrusel/>
+            {productos} 
+            <Seccion/>
+            <h4 className='text-center'>Mira nuestras ofertas e ideas de recetas en nuestro instagram.</h4>
+            <CarruselInstagram/>
         </div>
+
+
     );
 }
 

@@ -1,5 +1,5 @@
 .footer {
-    margin-top: 30px;
+   margin-top: 30px;
    background-color: #375a7f;
    padding: 2rem;
    display: flex;
@@ -9,4 +9,10 @@
 .footerA {
    color: rgb(34, 32, 32);
 
+}
+
+@media  (min-width: 700px){
+   .footer p{
+   font-size:1rem ; 
+}
 }

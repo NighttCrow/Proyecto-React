@@ -5,7 +5,7 @@ const BotonCarrito = () => {
   return( 
       <div>
          <button className='btn btn-dark'>
-            <Link to={"/carrito"} className="nav/link" >Carrito </Link>
+            <Link to={"/carrito"} className="nav-link" >Carrito </Link>
  
          </button> 
          <span className='btn btn-light'>{getItemQuantity()}</span>
