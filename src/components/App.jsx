@@ -4,7 +4,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar/Navbar';
 import Footer from './Footer/Footer';
 import ProductListContainer from './ProductListContainer/ProductListContainer';
-import Contacto from './Contacto/Contacto';
 import Carrito from './Carrito/Carrito'
 import Checkout from './Checkout/Checkout'
 import ProductDetailContainer from './ProductDetailContainer/ProductDetailContainer';
@@ -24,12 +23,10 @@ function App() {
               <Route path='/producto/:id' element={<ProductDetailContainer/>}/>
               <Route path='/checkout' element={<Checkout/>}/>
               <Route path='/carrito' element={<Carrito/>}/>
-              <Route path='/contacto' element={<Contacto/>}/>
             </Routes>   
             <ToastContainer />     
             <Footer/>
-            
-        </BrowserRouter>
+            </BrowserRouter>
       </CarritoProvider>
     </>
   );

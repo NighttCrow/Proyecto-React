@@ -58,7 +58,10 @@ h1, h2, h3, h4{
 
 .dropdown-menu {
     --bs-dropdown-link-hover-bg: #0dcaf0;
+    --bs-dropdown-link-active-bg: #0dcaf0;
 }
+
+
 
 .containerIg {
     padding-left:20px;
@@ -68,4 +71,18 @@ h1, h2, h3, h4{
 .logo{
     height: 80px;
     width: 80px;
+}
+/*Fin carrusel*/
+
+body {
+    background-color:aliceblue;
+    color: black;
+}
+
+.img-thumbnail {
+    background-color: aliceblue;
+}
+
+.card {
+    background-color: aliceblue;
 }
