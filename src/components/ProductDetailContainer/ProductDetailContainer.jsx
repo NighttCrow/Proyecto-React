@@ -16,9 +16,10 @@ const ProductDetailContainer = () => {
             const product = productos.find(item => item.id === parseInt(id))
             setProducto(product)
         })
-    }, []);
+    },[]);
     return (
         <div className="card mb-3 container itemDetail">
+
             <ProductDetail item = {producto} />
         </div>
     );
